@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      pre {
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      window.jscall = window.jscall || {
+        appReady() {
+          return 'N/A'
+        },
+      }
+
+      setTimeout(
+        () =>
+          (document.body.innerHTML =
+            '<pre>' + window.jscall.appReady() + '</pre>'),
+        1000
+      )
+    </script>
+  </body>
+</html>
